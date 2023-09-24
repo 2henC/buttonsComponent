@@ -1,29 +1,15 @@
-import React from 'react';
-import MButton from './Compoments/CompomentButton/CompomentButton';
-
+import React from "react";
+import Button from "./Compoments/CompomentButton/Button";
 
 function App() {
-
-  const handleClick = () => {
-    alert('Button clicked!');
-  }
-
-
   return (
     <div className="App">
-      Kiểm tra CompomentButton
-      <MButton
-        variant="contained"
-        color="success"
-        size="small"
-        className="custome-btn"
-        onClick={handleClick}
-      >
-        Text
-      </MButton>
-
-
-
+      <Button className="mt-4 " color="red">
+        Outlined
+      </Button>
+      <Button className="mt-4" color="blue">
+        Outlined
+      </Button>
     </div>
   );
 }
